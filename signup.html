@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="bg-warning-subtle">
+        <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+            <div class="box p-5 bg-light text-center w-75 rounded">
+                <h1>Smart Login System</h1>
+                <div class="custom row gy-2 mt-4">
+                    <div><input type="text" placeholder="Enter your name" class="form-control" id="name"
+                            autocomplete="off">
+                        <label for="name" class="text-danger">Your name must be at least 2 characters and doesn't
+                            contain any special character</label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Enter your email" class="form-control" id="email"
+                            autocomplete="off">
+                        <label for="email" class="text-danger">Please enter a correct email format.
+                            ex.user@domain.com</label>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Enter your password" class="form-control" id="pwd"
+                            autocomplete="off">
+                        <label for="pwd" class="text-danger">Password must be at least 6 characters</label>
+                    </div>
+                    <p class="text-success d-none">Signed up successfully!</p>
+                    <button class="btn btn-warning mt-4" id="signup">Sign Up</button>
+                </div>
+
+                <p class="mt-4">You have an account? <a href="index.html">Sign In</a></p>
+            </div>
+        </div>
+    </header>
+    <script src="js/signup.js"></script>
+</body>
+
+</html>
